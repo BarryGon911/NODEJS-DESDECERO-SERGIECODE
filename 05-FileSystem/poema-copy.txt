@@ -1,0 +1,16 @@
+Poema: "NodeJS al Ritmo del Backend"
+
+En la consola arranca el poder,
+NodeJS listo para responder.
+Sin bloqueos, todo en su flow,
+Sergie Code te enseña el show.
+
+JavaScript ya no es solo del front,
+en el servidor también marca el son.
+Con npm magia puedes crear,
+¡y en segundos un servidor levantar!
+
+Entre rutas, APIs y async ley,
+tu código fluye como un sensei.
+Así que dale play, no tengas estrés...
+¡Y domina el backend con NodeJS!
