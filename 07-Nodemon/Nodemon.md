@@ -4,5 +4,4 @@
 
 ![1748892941423](image/Nodemon/1748892941423.png)
 
-
-## Lo vamos instalar de manera local o en la instancia o carpeta de nuestro proyecto, con el siguiente comando: *npm install --save-dev nodemon*
+## Lo vamos instalar de manera local o en la instancia o carpeta de nuestro proyecto de desarrollo, con el siguiente comando: *npm i nodemon --save-dev*
