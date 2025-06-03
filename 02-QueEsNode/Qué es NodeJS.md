@@ -1,11 +1,10 @@
-![1748884844439](image/QuéesNodeJS/1748884844439.png)
-
 # [00:20:23](https://www.youtube.com/watch?v=I17ln313Pjk&t=1223s) - ¿Qué es NodeJS?
+
+![1748884844439](image/QuéesNodeJS/1748884844439.png)
 
 ![1748884949158](image/QuéesNodeJS/1748884949158.png)
 
 ![1748885157653](image/QuéesNodeJS/1748885157653.png)
-
 
 # 🧩 ¿Qué es una API RESTful?
 
@@ -63,7 +62,6 @@ Imagina que tu app de recetas quiere mostrar recetas desde un servidor:
 
 * Tu app hace `GET /recetas` → y el servidor responde con una lista de recetas en  **JSON** .
 * Si quieres agregar una receta nueva, haces `POST /recetas`.
-
 
 ## 🗣️ Conversación simulada: cómo funciona una API RESTful
 
