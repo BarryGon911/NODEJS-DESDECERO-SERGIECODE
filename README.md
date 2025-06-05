@@ -7,3 +7,5 @@
 ## (NodeJS, MongoDB, ExpressJS, PostgreSQL, Docker y más)
 
 ###### URL del video en Youtube: https://youtu.be/I17ln313Pjk?si=-BwBZGq7jTOZnnP7
+
+![1749007894865](image/README/1749007894865.png)
