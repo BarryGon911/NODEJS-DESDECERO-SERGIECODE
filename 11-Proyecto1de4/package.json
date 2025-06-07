@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-json-server",
+  "version": "0.0.1",
+  "description": "Armaremos un pequeño servidor con información de cursos",
+  "license": "ISC",
+  "author": "Sergie Code",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
