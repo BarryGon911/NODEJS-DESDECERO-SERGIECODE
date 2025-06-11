@@ -3,7 +3,6 @@ const path = require("path");
 
 const startServer = (options) => {
   const { port, public_path = "public" } = options;
-
   const app = express();
 
   // Para poder usar middlewares se usa la palabra use (express)
