@@ -4,6 +4,7 @@ node_modules/
 # Ignorar base de datos local de MongoDB
 data/
 data/db/
+mongo/
 
 # Ignorar backups de MongoDB
 dump/
