@@ -24,4 +24,4 @@ Se corre el comando: ***npm i mongoose***; para instalar el modelador de la base
 
 ## [03:12:32](https://www.youtube.com/watch?v=I17ln313Pjk&t=11552s) - Probando la API REST
 
-## [03:34:53](https://www.youtube.com/watch?v=I17ln313Pjk&t=12893s) - Despliegue de backend y base de datos en Railway
+## [03:34:53](https://www.youtube.com/watch?v=I17ln313Pjk&t=12893s) - Despliegue de backend y base de datos en Railway (Ya NO está disponible de manera gratuita).

@@ -36,7 +36,7 @@ router.get("/", async (req, res) => {
     if (books.lenght === 0) {
       return res.status(204).json([]);
     }
-    res(books);
+    res.json(books);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -71,3 +71,56 @@ router.post("/", async (req, res) => {
     });
   }
 });
+
+router.get("/:id", getBook, async (req, res) => {
+  res.json(res.book);
+});
+
+router.put("/:id", getBook, async (req, res) => {
+  try {
+    const book = res.book;
+    book.title = req.body.title || book.title;
+    book.author = req.body.title || book.author;
+    book.genre = req.body.title || book.genre;
+    book.publication_date = req.body.title || book.publication_date;
+
+    const updatedBook = await book.save();
+    res.json(updatedBook);
+  } catch (error) {
+    res.status(400).json({
+      message: error.message,
+    });
+  }
+});
+
+router.patch("/:id", getBook, async (req, res) => {
+  if (
+    !req.body.tittle &&
+    !req.body.author &&
+    !req.body.genre &&
+    !req.body.publication_date
+  ) {
+    res.status(400).json({
+      message:
+        "Al menos uno de estos campos, debe de ser enviado. Título, Autor, Género o Fecha de Publicación",
+    });
+  }
+
+  try {
+    const book = res.book;
+    book.title = req.body.title || book.title;
+    book.author = req.body.title || book.author;
+    book.genre = req.body.title || book.genre;
+    book.publication_date = req.body.title || book.publication_date;
+
+    const updatedBook = await book.save();
+    res.json(updatedBook);
+  } catch (error) {
+    res.status(400).json({
+      message: error.message,
+    });
+  }
+});
+
+// Se exporta el router, para app.js lo pueda importar porqué está declarado ahí
+module.exports = router;
