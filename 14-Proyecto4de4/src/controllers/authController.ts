@@ -8,7 +8,6 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     const { email, password } = req.body
 
     try {
-
         if (!email) {
             res.status(400).json({ message: 'El email es obligatorio' })
             return
@@ -17,8 +16,8 @@ export const register = async (req: Request, res: Response): Promise<void> => {
             res.status(400).json({ message: 'El password es obligatorio' })
             return
         }
+        
         const hashedPassword = await hashPassword(password)
-
         const user = await prisma.create(
             {
                 data: {
@@ -48,7 +47,6 @@ export const login = async (req: Request, res: Response): Promise<void> => {
     const { email, password } = req.body
 
     try {
-
         if (!email) {
             res.status(400).json({ message: 'El email es obligatorio' })
             return

@@ -65,14 +65,12 @@ export const updateUser = async (req: Request, res: Response): Promise<void> => 
     const userId = parseInt(req.params.id)
     const { email, password } = req.body
     try {
-
         let dataToUpdate: any = { ...req.body }
 
         if (password) {
             const hashedPassword = await hashPassword(password)
             dataToUpdate.password = hashedPassword
         }
-
         if (email) {
             dataToUpdate.email = email
         }
@@ -85,6 +83,7 @@ export const updateUser = async (req: Request, res: Response): Promise<void> => 
         })
 
         res.status(200).json(user)
+        
     } catch (error: any) {
         if (error?.code === 'P2002' && error?.meta?.target?.includes('email')) {
             res.status(400).json({ error: 'El email ingresado ya existe' })
